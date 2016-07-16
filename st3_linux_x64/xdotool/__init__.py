@@ -3,6 +3,7 @@ import os
 
 
 XDOTOOL = os.path.join(os.path.dirname(__file__), "xdotool")
+os.chmod(XDOTOOL, 0o700)
 
 
 def xdotool(*args):
